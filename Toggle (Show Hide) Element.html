@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Toggle Visibility of Element</h2>
+<button onclick="toggle_visibility('foo');">
+    Random Word
+   </button>
+   <div id="foo">
+     Click to display a random word
+   </div>
+
+<script>
+
+
+function toggle_visibility(foo) {
+       var e = document.getElementById(foo);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+
+</script>
+
+</body>
+</html>
